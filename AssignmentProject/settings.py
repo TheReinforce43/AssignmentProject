@@ -48,7 +48,11 @@ INSTALLED_APPS = [
     'category',
     'course',
     'account',
+    'enrollment',
+    'teacher',
+    'student',
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -150,4 +154,4 @@ REST_FRAMEWORK = {
 'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework_simplejwt.authentication.JWTAuthentication',)
 }
 
-AUTH_USER_MODEL = 'account.User'
+AUTH_USER_MODEL  = 'account.User'
